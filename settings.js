@@ -5,11 +5,11 @@ function convertToBool(text, fault = 'true') {
     return text === fault ? true : false;
 }
 module.exports = {
-SESSION_ID: process.env.SESSION_ID || "Your_Session_Id", // Add your session id
+SESSION_ID: process.env.SESSION_ID || "vUZxESDS#GoxYjO7sUUJw9bkWRKYnsMLxnYJQNNDHeTws-j92LOs", // Add your vUZxESDS#GoxYjO7sUUJw9bkWRKYnsMLxnYJQNNDHeTws-j92LOssession id
 PREFIX: process.env.PREFIX || ".",
 MODE: process.env.MODE || "public",  //public | private | inbox | group
 OWNER_NUMBER: process.env.OWNER_NUMBER || "94779062397",
-DEV: process.env.DEV || "94779062397",
+DEV: process.env.DEV || "94788011442",
 LANG: process.env.LANG || "EN", // EN | SI
 AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "true",
 AUTO_STATUS_REACT: process.env.AUTO_STATUS_REACT || "true",
@@ -37,6 +37,34 @@ ANTI_DELETE: process.env.ANTI_DELETE || "true",
 ANTI_DEL_PATH: process.env.ANTI_DEL_PATH || "same",  // inbox | same
 WELCOME: process.env.WELCOME || "true",
 GOODBYE: process.env.GOODBYE || "true",
+// settings.js
+
+const settings = {
+    owner: {
+        number: "1234567890",   // Owner's WhatsApp number
+        name: "Bot Owner",
+    },
+    bot: {
+        name: "MyWhatsAppBot",
+        prefix: "!",             // Command prefix
+        autoRead: true,          // Mark messages as read automatically
+        autoReply: true,         // Enable auto-replies
+        language: "en",          // Default language
+    },
+    api: {
+        openaiKey: "YOUR_OPENAI_API_KEY", // Example: if using GPT integration
+        weatherApiKey: "YOUR_WEATHER_API_KEY",
+    },
+    messages: {
+        success: "✅ Done!",
+        error: "❌ Something went wrong.",
+        onlyOwner: "🚫 This command is for the owner only.",
+        wait: "⏳ Please wait...",
+    }
+};
+
+module.exports = settings;
+    
 ADMIN_EVENTS: process.env.ADMIN_EVENTS || "true",
 INBOX_BLOCK: process.env.INBOX_BLOCK || "false",
 OMDB_API_KEY: process.env.OMDB_API_KEY || "76cb7f39", // omdbapi.com
