@@ -5,11 +5,11 @@ function convertToBool(text, fault = 'true') {
     return text === fault ? true : false;
 }
 module.exports = {
-SESSION_ID: process.env.SESSION_ID || "vUZxESDS#GoxYjO7sUUJw9bkWRKYnsMLxnYJQNNDHeTws-j92LOs", // Add your vUZxESDS#GoxYjO7sUUJw9bkWRKYnsMLxnYJQNNDHeTws-j92LOssession id
+SESSION_ID: process.env.SESSION_ID || "nJZiWLhJ#Ezr7kXYfLpvRpujMQyN9Sgg9s3IjsspohPWr5YLYhSg", // Add your vUZxESDS#GoxYjO7sUUJw9bkWRKYnsMLxnYJQNNDHeTws-j92LOssession id
 PREFIX: process.env.PREFIX || ".",
 MODE: process.env.MODE || "public",  //public | private | inbox | group
-OWNER_NUMBER: process.env.OWNER_NUMBER || "94779062397",
-DEV: process.env.DEV || "94788011442",
+OWNER_NUMBER: process.env.OWNER_NUMBER || "94769340542",
+DEV: process.env.DEV || "94769340542",
 LANG: process.env.LANG || "EN", // EN | SI
 AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "true",
 AUTO_STATUS_REACT: process.env.AUTO_STATUS_REACT || "true",
@@ -41,11 +41,11 @@ GOODBYE: process.env.GOODBYE || "true",
 
 const settings = {
     owner: {
-        number: "1234567890",   // Owner's WhatsApp number
+        number: "+9476340542",   // Owner's WhatsApp number
         name: "Bot Owner",
     },
     bot: {
-        name: "MyWhatsAppBot",
+        name: "sadew'sWhatsAppBot",
         prefix: "!",             // Command prefix
         autoRead: true,          // Mark messages as read automatically
         autoReply: true,         // Enable auto-replies
